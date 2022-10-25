@@ -164,6 +164,44 @@ body{
 
 
 
+
+/* offers-2*/
+#offers-2{ 
+    background: url(../img/01.jpg) center/cover no-repeat;
+}
+
+#offers-2 .row{
+    min-height: 60vh;
+}
+
+.offers-2-content span{
+    font-size: 28px;
+}
+.offers-2-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-2-content .btn{
+    border-color: transparent!important;
+}
+/* fin offers-2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* about */
 #about{
     background-color: rgba(179, 179, 179, 0.05);
