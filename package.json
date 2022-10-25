@@ -1,0 +1,23 @@
+{
+  "name": "rym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caste23456/RyM2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caste23456/RyM2/issues"
+  },
+  "homepage": "https://github.com/caste23456/RyM2#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}

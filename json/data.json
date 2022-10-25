@@ -1,0 +1,142 @@
+{
+   "message":{
+      "errors":[
+         {
+            "msg":"Debes ingresar el firstname y/o no debe ser nulo",
+            "param":"firstname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el firstname, es obligatorio",
+            "param":"firstname",
+            "location":"body"
+         },
+         {
+            "msg":"El firstname no debe superar los 40 y/o un minimo de 3 caracteres",
+            "param":"firstname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el firstname",
+            "param":"firstname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el name de la lastname y/o no debe ser nulo",
+            "param":"lastname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el name de la lastname, es obligatorio",
+            "param":"lastname",
+            "location":"body"
+         },
+         {
+            "msg":"El lastname debe tener un minimo de 3 y un maximo de 50 caracteres",
+            "param":"lastname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el lastname",
+            "param":"lastname",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el email, no puedes enviarlo vacio",
+            "param":"email",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el email",
+            "param":"email",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar un formato de correo electronico valido",
+            "param":"email",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el sponsorUsername y/o no debe ser nulo",
+            "param":"sponsorUsername",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el sponsorUsername, es obligatorio",
+            "param":"sponsorUsername",
+            "location":"body"
+         },
+         {
+            "msg":"El sponsorUsername debe tener un minimo de 5 y 50 caracteres",
+            "param":"sponsorUsername",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el sponsorUsername",
+            "param":"sponsorUsername",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el username y/o no debe ser nulo",
+            "param":"username",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el username, es obligatorio",
+            "param":"username",
+            "location":"body"
+         },
+         {
+            "msg":"El username debe tener un minimo de 5 y 50 caracteres",
+            "param":"username",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el username",
+            "param":"username",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el password y/o no debe ser nulo",
+            "param":"password",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el password, es obligatorio",
+            "param":"password",
+            "location":"body"
+         },
+         {
+            "msg":"La contraseña debe contener como minimo 8 caracteres",
+            "param":"password",
+            "location":"body"
+         },
+         {
+            "msg":"La confirmación de la contraseña no coincide con la contraseña",
+            "param":"passwordConfirmation",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el idProduct y/o no debe ser nulo",
+            "param":"idProduct",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar el idProduct, es obligatorio",
+            "param":"idProduct",
+            "location":"body"
+         },
+         {
+            "msg":"El idProduct no debe superar los 40 caracteres y/o un minimo de 1 caracter",
+            "param":"idProduct",
+            "location":"body"
+         },
+         {
+            "msg":"Debes ingresar una cadena de caracteres para el idProduct",
+            "param":"idProduct",
+            "location":"body"
+         }
+      ]
+   },
+   "code":403
+}

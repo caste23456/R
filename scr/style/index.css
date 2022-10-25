@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #4e8ff8;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 100px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header{
+    background: url(../img/ima.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+/* header-1 */
+#header-1{
+    background: url(../img/logoprinc.jpg) top/cover no-repeat;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* offers */
+#offers{ 
+    background: url(../img/blackfray.jpg) center/cover no-repeat;
+}
+
+#offers .row{
+    min-height: 90vh;
+}
+
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+/* offers-1 */
+#offers-1{ 
+    background: url(../img/otor.jpg) center/cover no-repeat;
+}
+
+#offers-1 .row{
+    min-height: 60vh;
+}
+
+.offers-1-content span{
+    font-size: 28px;
+}
+.offers-1-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-1-content .btn{
+    border-color: transparent!important;
+}
+/* fin offers-1 */
+
+
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* newsletter */
+#newsletter{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+
+
+
+
+
+/* comienso para el espacio del codigo del main */
+
+.main {
+    margin-top: 20px;
+  }
+  .section__title {
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+  }
+  .section__title:before {
+    content: "";
+    width: 200px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #245acf;
+  }
+.welcome {
+    text-align: center;
+    padding: 20px;
+    max-width: 750px;
+    margin: auto;
+  }
+  .welcome__txt {
+    font-size: 1.2em;
+    color: #777;
+  }
+  .welcome__btn {
+    display: block;
+    border: 2px solid #3397ee;
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #397f45;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.5s;
+  }
+  .welcome__btn:hover {
+    background: #3397ee;
+    color: white;
+  }
+ .welcome__txt{
+    text-align: justify;
+ }
+
+
+
+
+
+/*codigo para las image y propa*/
+
+
+.secticontainer{
+    position: relative;
+}
+
+.secticontainer .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.secticontainer .slide-container .slide .contentproje{
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+
+.secticontainer .slide-container .slide .contentproje h3{
+    font-size: 35px;
+    color: #3397ee;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.secticontainer .slide-container .slide .contentproje p{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    width: 40%;
+    height: 10%;
+
+}
+
+.secticontainer .slide-container .slide .contentproje .bntproj{
+    margin-top: 10px;
+    display: inline-block;
+    background: #3397ee;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid #3397ee;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.secticontainer .slide-container .slide .contentproje .bntproj:hover{
+    background: #3397ee;
+    border: 2px solid #3397ee;
+    color: #ffffff;
+}
+
+.secticontainer .slide-container{
+    display: none;
+}
+
+.secticontainer .slide-container.active{
+    display: block;
+}
+
+.secticontainer .slide-container:nth-child(1) .slide{
+    background: url(../img/1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.secticontainer .slide-container:nth-child(2) .slide{
+    background: url(../img/digimart.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.secticontainer .slide-container:nth-child(3) .slide{
+    background: url(../img/digimart.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.secticontainer #prev, 
+.secticontainer #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.secticontainer #prev:hover, 
+.secticontainer #next:hover{
+    background: transparent;
+}
+.secticontainer #prev{
+    left: 20px;
+}
+
+.secticontainer #next{
+    right: 20px;
+}
+
+
+
+@media(max-width: 500px){
+    .secticontainer #prev{
+        left: 0px;
+        top: 60%;
+    }
+
+    .secticontainer #next{
+        right: 0px;
+        top: 60%;
+    }
+
+
+    .secticontainer .slide-container .slide .contentproje p{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+    
+    }
+}
+
+
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap:1.5rem;
+}
+
+.dishes .box-container .box{
+    padding:2.5rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+

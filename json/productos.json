@@ -1,0 +1,129 @@
+
+
+
+
+{
+    "status": "success",
+    "items":[ {
+      "idProduct": "1",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    },
+    {
+      "idProduct": "2",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    },
+    {
+      "idProduct": "3",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    },
+    {
+      "idProduct": "4",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    },
+    {
+      "idProduct": "5",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    },
+    {
+      "idProduct": "6",
+      "idUser": "1",
+      "name": "Membresia DigimartBOX",
+      "sku": "008520368900",
+      "image": "https://i.ibb.co/mzS5JjQ/logo-digimartbox-500-500.png",
+      "salePrice": "2250.25",
+      "description": "-",
+      "offerAmount": "0.00",
+      "offerStatus": "INACTIVO",
+      "isv": "INACTIVO",
+      "status": "ACTIVO",
+      "createdAt": "2022-10-13T10:03:20.000Z",
+      "updatedAt": "2022-10-13T10:03:24.000Z",
+      "id_category": "1",
+      "rm_category": {
+        "name": "Default"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
