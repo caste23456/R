@@ -32,10 +32,7 @@ form.addEventListener('submit', (e) => {
   formdata.append('firstname',firstname)
   formdata.append('lastname',lastname) */
 
-  axios
-    .post(
-      API_URL,
-      {
+  axios.post(API_URL,{
         firstname,
         lastname,
         email,
