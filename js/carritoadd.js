@@ -98,6 +98,10 @@ class UI {
 				`;
     });
     productoDOM.innerHTML = result;
+
+
+
+    
   }
 
   getButtons() {

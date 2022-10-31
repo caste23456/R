@@ -21,6 +21,8 @@
     <!--css de index -->
     <link rel="stylesheet" href="../scr/style/index.css" />
 
+    <link rel="stylesheet" href="../plugin/sweetalert2/sweetalert2.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 
     <!--css de e-commerce -->
@@ -129,7 +131,43 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </header>
+
     <!-- end of header -->
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="product-div">
+          <div class="product-div-left">
+            <div class="img-container">
+              <img src="../scr/img/digiBox.webp" alt="watch" />
+            </div>
+          </div>
+
+          <div class="product-div-right">
+            <span class="product-name">DigimartBox</span>
+            <span class="product-price">$ 90</span>
+            <div class="product-rating">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star-half-alt"></i></span>
+              <span>(350 ratings)</span>
+            </div>
+            <p class="product-description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+              animi ad minima veritatis dolore. Architecto facere dignissimos
+              voluptate fugit ratione molestias quis quidem exercitationem
+              voluptas.
+            </p>
+            <div class="btn-groups">
+              <button type="button" class="buy-now-btn">
+                <i class="fas fa-wallet"></i>Llenar formulario
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- section grid -->
     <section id="collection" class="py-5">
@@ -141,138 +179,178 @@
             <i class="bx bx-spreadsheet"></i>
           </div>
           <div class="right-column-1">
-            <div>
-              <form id="form">
-                <p>Formulario de registro</p>
-                <div class="inputWithIcon">
-                  <input
-                    class="input1"
-                    id="id"
-                    name="id"
-                    type="text"
-                    placeholder="id"
-                  />
-                  <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <div class="inputWithIcon">
-                  <input
-                    class="input1"
-                    id="sponsor"
-                    name="sponsor"
-                    type="text"
-                    placeholder="Sponsor"
-                  />
-                  <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
+                          <div class="card-body">
+                              <form id="formulario" enctype="multipart/form-data">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                      <div id="grupo__sponsor">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="sponsor">* Sponsor</label>
+                                            <input class="formulario__input" name="sponsor" id="sponsor" type="text" placeholder="Sponsor" />
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                          </div>
+                                        <p class="formulario__input-error">El Sponsor tiene que ser de 5 a 16 dígitos <br> y solo puedecontener numeros, letras y guion bajo.
+                                        </p>
+                                    </div>
+                                    </div>
 
-                <div class="inputWithIcon">
-                  <input
-                    class="input1"
-                    id="username"
-                    name="username"
-                    type="text"
-                    placeholder="username"
-                  />
-                  <i class="bx bxs-user-account bx-tada"></i>
-                </div>
+                                  
+      
 
-                <div class="inputWithIcon">
-                  <input
-                    class="input1"
-                    id="firstname"
-                    name="firstname"
-                    type="text"
-                    placeholder="First name"
-                  />
-                  <i class="bx bx-rename bx-tada"></i>
-                </div>
+                                  <div class="col-md-6">
+                                    <div id="grupo__usuario">
+                                      <div class="form-group">
+                                        <label class="small mb-1" for="usuario">* UserName</label>
+                                        <input class="formulario__input" name="usuario" id="usuario" type="text" placeholder="User Name" />
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                      </div>
+                                      <p class="formulario__input-error">El Sponsor tiene que ser de 5 a 16 dígitos <br> y solo puedecontener numeros, letras y guion bajo.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
 
-                <div class="inputWithIcon">
-                  <input
-                    class="input1"
-                    id="lastname"
-                    name="lastname"
-                    type="text"
-                    placeholder="Last name"
-                  />
-                  <i class="bx bx-user-circle bx-tada"></i>
-                </div>
+                        
 
-                <div class="inputWithIcon-4">
-                  <input
-                    class="input4"
-                    id="mail"
-                    type="email"
-                    name="mail"
-                    placeholder="Email"
-                  />
-                  <i class="bx bx-envelope bx-tada"></i>
-                </div>
 
-                <div class="inputWithIcon-3">
-                  <input
-                    class="input3"
-                    id="password"
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                  />
-                  <i class="bx bx-key bx-tada"></i>
-                </div>
+                                  <div class="form-row">
+                                      <div class="col-md-6">
+                                        <div id="grupo__nombre">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="inputFirstName">* First Name</label>
+                                            <input class="formulario__input" name="nombre" id="nombre" type="text" placeholder="Enter first name" />
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                          </div>
+                                          <p class="formulario__input-error">Este campo es obligatorio</p>
+                                        </div>
+                                      </div>
 
-                <div class="inputWithIcon-3">
-                  <input
-                    class="input3"
-                    id="repass"
-                    name="repass"
-                    type="password"
-                    placeholder="Confirmar Password"
-                  />
-                  <i class="bx bx-key bx-tada"></i>
-                </div>
+                                      <div class="col-md-6">
+                                        <div id="grupo__lastname">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="inputLastName">* Last Name</label>
+                                            <input class="formulario__input" name="lastname" id="lastname" type="text" placeholder="Enter last name" />
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                          </div>
+                                          <p class="formulario__input-error">Este campo es obligatorio</p>
+                                        </div>
+                                      </div>
+                                  </div>
 
-                <div class="boton">
-                  <button class="button-1">Enviar</button>
+
+                                  <div id="grupo__correo">
+                                    <div class="form-group">
+                                      <label class="small mb-1" for="inputEmailAddress">* Email</label>
+                                      <input class="formulario__input" name="correo" id="correo" type="email" aria-describedby="emailHelp" placeholder="alguien@gmail.com" />
+                                      <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                                  </div>
+                                  
+                                  
+                                  
+                                  
+                                  <div class="form-row">
+                                      <div class="col-md-6">
+                                        <div id="grupo__password">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="inputPassword">* Password</label>
+                                            <input class="formulario__input" name="password" id="password" type="password" placeholder="Enter password" />
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                          </div>
+                                          <p class="formulario__input-error">La contraseña tiene que ser de 8 a 12 dígitos.</p>
+                                        </div>
+                                      </div>
+
+
+                                      <div class="col-md-6">
+                                        <div id="grupo__password2">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="inputConfirmPassword">* Confirm Password</label>
+                                            <input class="formulario__input" name="password2" id="password2" type="password" placeholder="Confirm password" />
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                          </div>
+                                          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                                        </div>
+                                      </div>
+                                  </div>
+
+
+
+
+
+                                
+                                    <div class="mb-3">
+                                      <label for="password2" class="formulario__label"
+                                        >* Recibo de pago</label
+                                      >
+                                      <input type="file" class="form-control" id="archiv" />
+                                    </div>
+                      
+                                    <!-- Grupo: Terminos y Condiciones -->
+                                    <div class="form-row">
+                                      <div class="formulario__grupo" id="grupo__terminos">
+                                        <label class="formulario__label">
+                                          <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"/>* Acepto los<a data-toggle="modal" data-target="#exampleModalScrollable" href="">Terminos y Condiciones</a>
+                                        </label>
+                                      </div>
+
+                                      <div class="pagar" id="pagar">
+                                        <label class="formulario__label">
+                                         <a href="../app/leve.html">Ir a pagar</a>
+                                        </label>
+                                      </div>
+
+                                    </div>
+                                   
+                                    
+
+                               
+                      
+                                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                      <button class="formulario__btn">Enviar</button>
+                                      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito" > Formulario enviado exitosamente!
+                                      </p>
+                                    </div>
+
+                                    <div class="formulario__mensaje" id="formulario__mensaje">
+                                      <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> fill form</p>
+                                    </div>
+                                  
+                              </form>
+                          </div>
+                         
+                  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Terminos y condiciones R & M</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quo, maiores reiciendis incidunt provident quibusdam quas dolor eaque et molestias pariatur nihil! Provident fugiat illo totam eaque magni ducimus ipsam.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
                 </div>
-              </form>
+              </div>
             </div>
+
+
+
+           
           </div>
         </div>
       </div>
     </section>
 
-    <!--Espacio para el modal-->
-    <div class="modal" tabindex="-1" role="dialog" id="ventana-modal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Fin del modal-->
+   
 
     <!-- blogs -->
     <section id="offers-1" class="py-5">
@@ -289,14 +367,6 @@
       </div>
     </section>
     <!-- end of blogs -->
-
-
-
-
-
-
-
-
 
     <!-- footer -->
     <footer class="bg-dark py-5">
@@ -370,9 +440,6 @@
             </div>
           </div>
 
-
-
-          
           <div class="col-md-6 col-lg-3">
             <h5 class="fw-light mb-3">Nuestras redes</h5>
             <div>
@@ -412,9 +479,6 @@
               </ul>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </footer>
@@ -426,13 +490,12 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- bootstrap js -->
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script src="../js/script.js"></script>
-    <!-- js carrito -->
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="../js/carritoadd.js"></script>
-    <script src="../js/buttonEnv.js"></script>
+
     <script src="../js/endpoint.js"></script>
+    <script src="../js/prueba.js"></script>
+    <script src="../js/script1.js"></script>
+    <script src="../plugin//sweetalert2//sweetalert2.min.js"></script>
+
     <script src="../node_modules/axios/dist/axios.min.js"></script>
 
     <!-- Optional JavaScript -->
@@ -453,5 +516,16 @@
       crossorigin="anonymous"
     ></script>
     <!---->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -2,58 +2,82 @@
 
 const API_URL = 'http://localhost:2527/order';
 
-const token = '11e05ed76d61223b0f9f2b5c091c3a5d';
+const token = '';
 
 const config = {
   headers: {
     'Content-Type': 'multipart/form-data',
-    Authorization: `Bearer ${token}`,
+   
   },
 };
 
-const bodyParameters = {
+/* const bodyParameters = {
   key: 'value',
-};
 
-let form = document.getElementById('form');
+}; */
+
+let form = document.getElementById('formulario');
 form.addEventListener('submit', (e) => {
-  let sponsor = document.getElementById('sponsor').value;
-  let username = document.getElementById('username').value;
-  let firstname = document.getElementById('firstname').value;
-  let lastname = document.getElementById('lastname').value;
-  let email = document.getElementById('mail').value;
-  let password = document.getElementById('password').value;
-  let repass = document.getElementById('repass').value;
-
   e.preventDefault();
-  console.log(firstname);
+  let sponsor = document.getElementById('sponsor').value;
+  let username = document.getElementById('usuario').value;
+  let firstname = document.getElementById('nombre').value;
+  let lastname = document.getElementById('lastname').value;
+  let email = document.getElementById('correo').value;
+  let password = document.getElementById('password').value;
+  let repass = document.getElementById('password2').value;
+  let ima = document.getElementById('ima').files[0];
+  
+
+  let formdata = new FormData()
+  formdata.append('firstname', firstname)
+  formdata.append('lastname', lastname)
+  formdata.append('email', email)
+  formdata.append('sponsorUsername', sponsor)
+  formdata.append('username', username)
+  formdata.append('password', password)
+  formdata.append('passwordConfirmation', repass)
+  formdata.append('idProduct', '1')
+  formdata.append('imageProoPayment', ima)
+
+  console.log(ima)
+
 
   /* let formdata = new FormData()
   formdata.append('firstname',firstname)
   formdata.append('lastname',lastname) */
 
-  axios.post(API_URL,{
-        firstname,
-        lastname,
-        email,
-        sponsorUsername: sponsor,
-        username,
-        password,
-        passwordConfirmation: repass,
-        idProduct: '1',
-      },
-      config
+  axios.post(API_URL,formdata, config
     )
+    
     .then((resp) => {
-      console.log(resp.data);
+   
+      Swal.fire('Mensaje de confirmación', resp.data, 'success')
       return new Promise((resolve) => {
         resolve(true);
       });
     })
     .catch((resp) => {
-      console.log(resp.response.data.message);
+      console.log(resp.response.data)
+      Swal.fire('Oops', 'Ha ocurrido un error', 'error')
       return new Promise((resolve) => {
+        
         resolve(false);
       });
     });
+    
+    return false
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
